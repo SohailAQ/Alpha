@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     # 3rd Party Apps
     'rest_framework',
     'corsheaders',
+    'django_extensions',
 
     # Installed Apps
     'product.apps.ProductConfig',

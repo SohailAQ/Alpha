@@ -17,7 +17,7 @@ class ProductListView(ListView):
 class ProductCreateView(CreateView):
     model = Product
     template_name = 'product/product_form.html'
-    fields = ['name', 'manufacturer', 'price', 'quantity']
+    fields = ['name', 'manufacturer', 'price', 'quantity', 'purchased_by']
 
 
 class ProductDetailView(DetailView):
@@ -28,7 +28,7 @@ class ProductDetailView(DetailView):
 
 class ProductUpdateView(UpdateView):
     model = Product
-    fields = ['name', 'manufacturer', 'price', 'quantity']
+    fields = ['name', 'manufacturer', 'price', 'quantity', 'purchased_by']
 
 
 class ProductDeleteView(DeleteView):
